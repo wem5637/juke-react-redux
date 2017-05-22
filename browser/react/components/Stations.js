@@ -3,8 +3,6 @@ import {Link} from 'react-router';
 
 export default function stations(props){
 
-console.log(props.stations)
-
 	return (
 	    <div>
 	      <h3>Stations</h3>

@@ -4,13 +4,13 @@ import {Link} from 'react-router';
 export default function Albums (props) {
 
   const albums = props.albums;
-
+  console.log('ALBUMS: ', albums)
   return (
     <div>
       <h3>Albums</h3>
       <div className="row">
         {
-          albums && albums.map(album => (
+          albums && albums.list && albums.list.map(album => (
             <div className="col-xs-4" key={ album.id }>
               <Link className="thumbnail" to={`/albums/${album.id}`}>
                 <img src={ album.imageUrl }/>
